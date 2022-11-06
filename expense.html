@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  onsubmit="saveToLocalStorage(event)">
+        <label> Expense Amount</label>
+        <input id='expamount' type="number" name="expamount" />
+        <label> Enter Description</label>
+        <input id='entdescription' type="text" name="entdescription" />
+        <label> Select Catagory</label>
+        <select  id="selectCatagory" name="selectCatagory">
+            <option value="movie" >Movie</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Grocery">Grocery</option>
+            <option value="Travel" >Travel</option>
+        </select>
+        <button> Submit </button>
+    </form>
+    <ul id='listOfUsers'></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="expense.js"></script>
+</body>
+</html>
